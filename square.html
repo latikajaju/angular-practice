@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Square and Square-root</title>
+    </head>
+    <body>
+        <div>
+            <input type="text" id="numVal">
+            <input type="button" value="Square" onClick="square()">
+            <input type="button" value="SquareRoot" onClick="squareRoot()"/>
+        </div>
+
+        <script>
+
+            function square(){
+                let a = document.getElementById("numVal").value;
+                let result = a * a;
+                alert ("Result is:"  +result);
+            }
+
+            function squareRoot()
+            {
+                let a = document.getElementById("numVal").value;
+                let result = Math.sqrt(a);
+                alert("Result is:" +result);
+            }
+        </script>
+    </body>
+</html>
