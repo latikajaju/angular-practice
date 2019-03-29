@@ -10,8 +10,18 @@
 </head>
 <body>
     <div>
-        <input type="text" id="android" onkeyup="popDv(this.value, empDv)">
-    </div>
+        <!--<input type="text" id="android" onkeyup="popDv(this.value, empDv)">-->
+            Enter value 1: <input type="text" value="1" id="text1" />
+            Enter value 2: <input type="text" value="2" id="text2" />
+            <select id = "dropdownId">
+                <option value="1">add</option>
+                <option value="2">sub</option>
+                <option value="3">mul</option>
+                <option value="4">div</option>
+            </select>
+            <input type="button" value="submit" onclick="calculations()">
+            <input type="text" id="result" />
+    </div>    
     <div id="empDv">
 
     </div>
