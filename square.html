@@ -5,8 +5,9 @@
     <body>
         <div>
             <input type="text" id="numVal">
-            <input type="button" value="Square" onClick="square()">
+            <input type="button" value="Square" onClick="square()" />
             <input type="button" value="SquareRoot" onClick="squareRoot()"/>
+            <input type="button" value="CubeRoot" onClick="cubeRoot()"/>
         </div>
 
         <script>
@@ -22,6 +23,13 @@
                 let a = document.getElementById("numVal").value;
                 let result = Math.sqrt(a);
                 alert("Result is:" +result);
+            }
+
+            function cubeRoot()
+            {
+                let a = document.getElementById("numVal").value;
+                let result = Math.cbrt(a);
+                alert("Result is: " +result);
             }
         </script>
     </body>
